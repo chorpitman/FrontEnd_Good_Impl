@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <title>Inner page</title>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.js" type="text/javascript"></script> 
+	<script src="js/firebase.js" type="text/javascript"></script>
+	<script src="js/all.js" type="text/javascript"></script> 
+    <body>
+        <main class="content">
+            <article id="about">
+                <h2 class="title">About me</h2>
+                <p class="info">Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, 
+                    cu case ceteros cum. Novum commodo malorum vix ut. Dolores 
+                    consequuntur in ius, sale electram dissentiunt quo te. Cu duo 
+                    omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, 
+                    quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas intellegam vix in.
+                    Eum facete intellegat ei, ut mazim melius usu. Has elit simul primis ne, regione minimum id cum. 
+                    Sea deleniti dissentiet ea. Illud mollis moderatius ut per, at qui ubique populo. 
+                    Eum ad cibo legimus, vim ei quidam fastidii. Quo debet vivendo ex. Qui ut admodum senserit partiendo. 
+                    Id adipiscing disputando eam, sea id magna pertinax concludaturque.
+                </p>
+            </article>
+            <article id="education">
+                <h2 class="title">Education</h2>
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <span class="year">1990</span>
+                            <div class="info">
+                                <h4>Title</h4>
+                                Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, 
+                                cu case ceteros cum. Novum commodo malorum vix ut. Dolores 
+                                consequuntur in ius, sale electram dissentiunt quo te. Cu duo 
+                                omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, 
+                                quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas intellegam vix in.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="year">1991</span>
+                            <div class="info">
+                                <h4>Title</h4>
+                                Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, 
+                                cu case ceteros cum. Novum commodo malorum vix ut. Dolores 
+                                consequuntur in ius, sale electram dissentiunt quo te. Cu duo 
+                                omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, 
+                                quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas intellegam vix in.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="year">1992</span>
+                            <div class="info">
+                                <h4>Title</h4>
+                                Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, 
+                                cu case ceteros cum. Novum commodo malorum vix ut. Dolores 
+                                consequuntur in ius, sale electram dissentiunt quo te. Cu duo 
+                                omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, 
+                                quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas intellegam vix in.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="year">1993</span>
+                            <div class="info">
+                                <h4>Title</h4>
+                                Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, 
+                                cu case ceteros cum. Novum commodo malorum vix ut. Dolores 
+                                consequuntur in ius, sale electram dissentiunt quo te. Cu duo 
+                                omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, 
+                                quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas intellegam vix in.
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="spinner">
+                        <i class="fa fa-refresh fa-spin fa-2x"></i>
+                    </div>
+                </div>
+            </article>
+            <article id="experience">
+                <h2 class="title">Experience</h2>
+                <div class="info">
+                    <div class="timeline">
+                        <h4>Google</h4>
+                        2013-2014
+                    </div>
+                    <div class="description">
+                        <h4>Front-end developer / php programmer</h4>
+                        Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, 
+                        cu case ceteros cum. Novum commodo malorum vix ut. Dolores 
+                        consequuntur in ius, sale electram dissentiunt quo te. Cu duo 
+                        omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, 
+                        quando voluptatibus eos in. Eum facete intellegat ei, ut mazim melius usu.
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="timeline">
+                        <h4>Twitter</h4>
+                        2012
+                    </div>
+                    <div class="description">
+                        <h4>Web developer</h4>
+                        Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, 
+                        cu case ceteros cum. Novum commodo malorum vix ut. Dolores 
+                        consequuntur in ius, sale electram dissentiunt quo te. Cu duo 
+                        omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, 
+                        quando voluptatibus eos in. Eum facete intellegat ei, ut mazim melius usu.
+                    </div>
+                </div>
+            </article>
+            <article id="skills">
+                <nav>
+                    <a class="open-edit-button button">Open edit</a>
+                </nav>
+                <h2 class="title">Skills</h2>
+                <form class="hidden-block">
+                    <fieldset>
+                        <div class="input-block">Skill name: <input type="text" maxlength="100" placeholder="Enter skill name" id="skill-name" required></div>
+                        <div class="input-block">Skill range: <input type="number" min="10" max="100" placeholder="Enter skill range" id="skill-range" required></div>
+                        <input class="add-skill-button button" type="submit" value="Add skill">
+                    </fieldset>
+                </form>
+                <div>
+                    <dl class="skills-list">
+                        <dt class="skill percentage-100">HTML</dt>
+                        <dt class="skill percentage-70">CSS</dt>
+                        <dt class="skill percentage-60">jQuery</dt>
+                        <dt class="skill percentage-40">PHP</dt>
+                        <dt class="skill percentage-15">Lavarel 2 (framework)</dt>
+                    </dl>
+                    <dl class="level">
+                        <dt>Beginner</dt>
+                        <dt class="proficient">Proficient</dt>
+                        <dt class="expert">Expert</dt>
+                        <dt class="master">Master</dt>
+                    </dl>
+                </div>
+            </article>
+            <article id="portfolio">
+                <h2 class="title">Portfolio</h2>
+                <nav>
+                    <ul class="portfolioFilter">
+                        <li><a href="#" data-filter="*" class="active">All</a> /</li>
+                        <li><a href="#" data-filter=".code">Code</a> /</li>
+                        <li><a href="#" data-filter=".ui">UI</a></li>
+                    </ul>
+                </nav>
+				<div class="portfolioContainer">
+					<div class="image code">
+						<img src="images/portfolio_coder.jpg" alt="Portfolio 1" height="200" width="300">
+						<div class="box-item">
+							<h3>Some text</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque rutrum lorem, id condimentum nulla vulputate sed. Vivamus sed sapien venenatis, imperdiet urna eget, mollis metus. </p>
+							<a href="#"><i class="fa fa-link"></i> <span class="nav-label">View resources</span></a>
+						</div>
+					</div>
+					<div class="image ui">
+						<img src="images/portfolio_sad.jpg" alt="Portfolio 2" height="200" width="300">
+						<div class="box-item">
+							<h3>Some text</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque rutrum lorem, id condimentum nulla vulputate sed. Vivamus sed sapien venenatis, imperdiet urna eget, mollis metus. </p>
+							<a href="#"><i class="fa fa-link"></i> <span class="nav-label">View resources</span></a>
+						</div>
+					</div>
+					<div class="image ui">
+						<img src="images/portfolio_sad.jpg" alt="Portfolio 3" height="200" width="300">
+						<div class="box-item">
+							<h3>Some text</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque rutrum lorem, id condimentum nulla vulputate sed. Vivamus sed sapien venenatis, imperdiet urna eget, mollis metus. </p>
+							<a href="#"><i class="fa fa-link"></i> <span class="nav-label">View resources</span></a>
+						</div>
+					</div>
+					<div class="image code">
+						<img src="images/portfolio_coder.jpg" alt="Portfolio 4" height="200" width="300">
+						<div class="box-item">
+							<h3>Some text</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque rutrum lorem, id condimentum nulla vulputate sed. Vivamus sed sapien venenatis, imperdiet urna eget, mollis metus. </p>
+							<a href="#"><i class="fa fa-link"></i> <span class="nav-label">View resources</span></a>
+						</div>
+					</div>
+				</div>
+            </article>
+            <article id="contacts">
+                <h2 class="title">Contacts</h2>
+                <div>
+                    <div class="contact">
+                        <div class="contact-icon"><span class="fa fa-phone fa-2x fa-fw"></span></div>
+                        <h4><a href="tel:500345242">500 345 242</a></h4>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon"><span class="fa fa-envelope fa-2x fa-fw"></span></div>
+                        <h4><a href="mailto:office@kamsolutions.pl">office@kamsolutions.pl</a></h4>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon"><span class="fa fa-twitter fa-2x fa-fw"></span></div>
+                        <h4 class="link-header">Twitter</h4>
+                        <a class="link" href="https://twitter.com/WordPress">https://twitter.com/WordPress</a>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon"><span class="fa fa-facebook fa-2x fa-fw"></span></div>
+                        <h4 class="link-header">Facebook</h4>
+                        <a class="link" href="https://www.facebook.com/facebook">https://www.facebook.com/facebook</a>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-icon"><span class="fa fa-skype fa-2x fa-fw"></span></div>
+                        <h4 class="link-header">Skype</h4>
+                        <a class="link">kamsolutions.pl</a>
+                    </div>
+                </div>
+            </article>
+            <article id="feedbacks">
+                <h2 class="title">Feedbacks</h2>
+                <ul>
+                    <li>
+                        <blockquote>
+                            <div>
+                                <q>Even the all-powerful Pointing has no control about the blind texts
+                                it is an almost unorthographic	life One day however a small line of blind text 
+                                by the name of Lorem Ipsum decided to leave. </q> 
+                            </div>
+                            <img class="floating-image" src="images/MartinFriman.jpg" alt="Martin Friman" height="50" width="50">
+                            <address> Martin Friman Programmer, <a href="http://somesite.com"> somesite.com </a> </address>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <div>
+                                <q>Even the all-powerful Pointing has no control about the blind texts
+                                it is an almost unorthographic	life One day however a small line of blind text 
+                                by the name of Lorem Ipsum decided to leave. </q> 
+                            </div>
+                            <img class="floating-image" src="images/MartinFriman.jpg" alt="Martin Friman" height="50" width="50">
+                            <address> Martin Friman Programmer, <a href="http://somesite.com"> somesite.com </a> </address>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <div>
+                                <q>Even the all-powerful Pointing has no control about the blind texts
+                                it is an almost unorthographic	life One day however a small line of blind text 
+                                by the name of Lorem Ipsum decided to leave. </q> 
+                            </div>
+                            <img class="floating-image" src="images/MartinFriman.jpg" alt="Martin Friman" height="50" width="50">
+                            <address> Martin Friman Programmer, <a href="http://somesite.com"> somesite.com </a> </address>
+                        </blockquote>
+                    </li>
+					 <li>
+                        <blockquote>
+                            <div>
+                                <q>Even the all-powerful Pointing has no control about the blind texts
+                                it is an almost unorthographic	life One day however a small line of blind text 
+                                by the name of Lorem Ipsum decided to leave. </q> 
+                            </div>
+                            <img class="floating-image" src="images/MartinFriman.jpg" alt="Martin Friman" height="50" width="50">
+                            <address> Martin Friman Programmer, <a href="http://somesite.com"> somesite.com </a> </address>
+                        </blockquote>
+                    </li>
+					 <li>
+                        <blockquote>
+                            <div>
+                                <q>Even the all-powerful Pointing has no control about the blind texts
+                                it is an almost unorthographic	life One day however a small line of blind text 
+                                by the name of Lorem Ipsum decided to leave. </q> 
+                            </div>
+                            <img class="floating-image" src="images/MartinFriman.jpg" alt="Martin Friman" height="50" width="50">
+                            <address> Martin Friman Programmer, <a href="http://somesite.com"> somesite.com </a> </address>
+                        </blockquote>
+                    </li>
+					 <li>
+                        <blockquote>
+                            <div>
+                                <q>Even the all-powerful Pointing has no control about the blind texts
+                                it is an almost unorthographic	life One day however a small line of blind text 
+                                by the name of Lorem Ipsum decided to leave. </q> 
+                            </div>
+                            <img class="floating-image" src="images/MartinFriman.jpg" alt="Martin Friman" height="50" width="50">
+                            <address> Martin Friman Programmer, <a href="http://somesite.com"> somesite.com </a> </address>
+                        </blockquote>
+                    </li>
+					 <li>
+                        <blockquote>
+                            <div>
+                                <q>Even the all-powerful Pointing has no control about the blind texts
+                                it is an almost unorthographic	life One day however a small line of blind text 
+                                by the name of Lorem Ipsum decided to leave. </q> 
+                            </div>
+                            <img class="floating-image" src="images/MartinFriman.jpg" alt="Martin Friman" height="50" width="50">
+                            <address> Martin Friman Programmer, <a href="http://somesite.com"> somesite.com </a> </address>
+                        </blockquote>
+                    </li>
+                </ul>
+            </article>
+        </main>
+		 <div class="hide-menu-button">
+            <a>
+                <span class="fa fa-bars"></span>
+            </a>
+        </div>
+        <div class="go-top-button">
+            <a>
+                <span class="fa fa-chevron-up"></span>
+            </a>
+        </div>
+        <div class="sidebar">
+            <div class="menu-top">
+                <figure>
+                    <img class="circle-image" src="images/JohnDoe.jpg" alt="John Doe" height="100" width="100">
+                </figure>
+                <h3>John Doe</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="active" href="#about">
+                        <span class="fa fa-user fa-2x fa-fw"></span>
+                        <span class="menu-item-description">About me</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education">
+                        <span class="fa fa-graduation-cap fa-2x fa-fw"></span>
+                        <span class="menu-item-description">Education</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience">
+                        <span class="fa fa-pencil fa-2x fa-fw"></span>
+                        <span class="menu-item-description">Experience</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                        <span class="fa fa-diamond fa-2x fa-fw"></span>
+                        <span class="menu-item-description">Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">
+                        <span class="fa fa-suitcase fa-2x fa-fw"></span>
+                        <span class="menu-item-description">Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacts">
+                        <span class="fa fa-location-arrow fa-2x fa-fw"></span>
+                        <span class="menu-item-description">Contacts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#feedbacks">
+                        <span class="fa fa-comment-o fa-2x fa-fw"></span>
+                        <span class="menu-item-description">Feedbacks</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="go-back-button">
+                    <a href="index.html">
+                    <span class="fa fa-chevron-left"></span>
+                    <span class="go-back-description">Go back</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </body>
+</html>

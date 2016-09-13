@@ -1,0 +1,34 @@
+<div ng-controller="SkillsController as skillsCtrl" ng-mouseover="mainCtrl.hoverIn()" ng-mouseleave="mainCtrl.hoverOut()">
+    <nav>
+        <a class="open-edit-button button" ng-show="mainCtrl.hoverEdit" ng-click="toggle = !toggle">Open edit</a>
+    </nav>
+    <h2 class="title">Skills</h2>
+    <form ng-class="{'hidden-block' : !toggle}" name="skillForm" ng-submit="skillsCtrl.push(mainCtrl.name, mainCtrl.range); mainCtrl.resetForm();" novalidate>
+        <fieldset>
+            <div class="input-block">
+    	        <label> Skill name: </label>
+    	        <input type="text" placeholder="Enter skill name" id="skill-name" 
+    	            name="name" ng-model="mainCtrl.name" required ng-maxlength="100">
+    	        <p ng-show="skillForm.name.$error.maxlength" class="error-msg">
+    	        	Skill name is too long.
+    	        </p>
+            </div>
+            <div class="input-block">
+            	<label>Skill range: </label>
+            	<input type="number"  placeholder="Enter skill range" ng-model="mainCtrl.range" id="skill-range" 
+            		name="range" required min="10" max="100">
+                <p ng-show="!skillForm.range.$error.required && skillForm.range.$invalid" class="error-msg">
+                	Skill range must be from 10 to 100.
+                </p>
+            </div>
+            <input class="add-skill-button button" type="submit" value="Add skill" ng-disabled="skillForm.$invalid">
+        </fieldset>
+    </form>
+    <skills-list list="skillsCtrl.list"></skills-list>
+    <dl class="level">
+        <dt>Beginner</dt>
+        <dt class="proficient">Proficient</dt>
+        <dt class="expert">Expert</dt>
+        <dt class="master">Master</dt>
+    </dl>
+</div>
